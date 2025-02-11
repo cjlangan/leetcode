@@ -26,7 +26,7 @@ var topKFrequent = function(nums, k) {
                 // Get other data
                 let left = idx - offset;
                 let right = idx - offset + 1;
-                let [otherCount, otherIdx] = map.get(arr[left]);
+                let [otherCount, _] = map.get(arr[left]);
 
                 // if counter is bigger than one ahead, swap
                 if(count > otherCount) {
